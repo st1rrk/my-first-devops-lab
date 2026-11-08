@@ -1,1 +1,33 @@
+name: My first pipeline
 
+on:
+   push: # means the workflow is triggered whenever push action is made to github
+   workflow_dispatch: # makes it possible to run the wrokflow manually
+
+jobs:
+   Linux-Commands: # job name
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository # uploads the repository files into the virtual machine
+          uses: actions/checkout@v4 
+     
+        - name: Say hello # prints the command between the echo qoutes
+          run: echo" Hello from the automated pipeline"
+
+        - name: Show date # shows the date, time and the system time zone
+          run: date 
+
+        - name: Show who and where am i # shows the user id and the current directory
+          run: whoami && pwd 
+
+        - name: Show linux version and machine details
+          run: cat /etc/os-release &&  uname -a
+
+        - name: Show files and hidden files # shows detailed info about directory files
+          run: ls -la
+
+        
+
+
+   
+   
