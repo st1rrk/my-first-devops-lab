@@ -12,16 +12,16 @@ jobs:
           uses: actions/checkout@v4 
      
         - name: Say hello # prints the command between the echo qoutes
-          run: echo" Hello from the automated pipeline"
+          run: echo "Hello from the automated pipeline"
 
         - name: Show date # shows the date, time and the system time zone
           run: date 
 
         - name: Show who and where am i # shows the user id and the current directory
-          run: whoami && pwd 
+          run: whoami ; pwd 
 
         - name: Show linux version and machine details
-          run: cat /etc/os-release &&  uname -a
+          run: cat /etc/os-release ; uname -a
 
         - name: Show files and hidden files # shows detailed info about directory files
           run: ls -la
