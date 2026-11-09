@@ -11,6 +11,7 @@ To establish an automated pipeline that runs few linux commands whenever there's
 ## Usage
 ### Here's a flow chart describing the process
 <img width="1026" height="1678" alt="image" src="https://github.com/user-attachments/assets/20f15440-2390-4407-b903-c4e0e6010c67" />
+
 ## Results
 The output is an automated and successfully working pipeline.
 ## Learning outcomes
