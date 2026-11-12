@@ -12,7 +12,7 @@ jobs:
           uses: actions/checkout@v4 
      
         - name: Say hello # prints the command between the echo qoutes
-          run: ech "Hello from the automated pipeline"
+          run: echo "Hello from the automated pipeline"
 
         - name: Show date # shows the date, time and the system time zone
           run: date 
